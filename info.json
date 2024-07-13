@@ -1,9 +1,9 @@
 {
   "name": "eldred777-notepad",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "title": "Notepad",
   "author": "Eldred777",
   "factorio_version": "1.1",
   "dependencies": ["base >= 1.1"],
-  "description": "This mod adds in fire armor that leaves behind damaging fire as you walk around."
+  "description": "TODO"
 }
