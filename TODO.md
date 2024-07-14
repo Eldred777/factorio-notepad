@@ -1,9 +1,9 @@
 # Pending functionality
 
-- Open/close window with text entry, saved to each character? 
-- esc to stop entering text 
-- resize window
-- scrolling 
+- Hide window; quickbar button + keybind (settings)
+- resize window --- store as user setting?
+- remember window position
+- scrolling: refinement required
 
 
 # Future (possible) functionality
@@ -13,5 +13,4 @@
 - Markdown? 
 - Link to positions on the map? 
 - Basic todo list click functionality? 
-- minimise window without closing (reduce to title bar, like)
-- notes sharing for multiplayer
+- notes sharing for multiplayer (global tabs, like)

@@ -1,22 +1,37 @@
-local auto_sci_pack = data.raw["item"]["automation-science-pack"]
-data:extend {
-	{
-		type = "custom-input",
-		name = "eld-note-menu",
-		key_sequence = "SHIFT + N",
-		action = "lua",
-	},
-	{
-		type = "shortcut",
-		name = "eld-note-menu",
-		action = "lua",
-		icon = {
-			filename = auto_sci_pack.icon,
-			size = auto_sci_pack.icon_size,
-			mipmap_count = auto_sci_pack.icon_mipmaps,
-		},
-		toggleable = true,
-	}
+local styles = data.raw["gui-style"].default
+
+styles["notepad_content_frame"] = {
+	type = "frame_style",
+	parent = "inside_shallow_frame_with_padding",
+	vertically_stretchable = "on"
 }
 
-local styles = data.raw["gui-style"].default
+styles["notepad_controls_flow"] = {
+	type = "horizontal_flow_style",
+	vertical_align = "center",
+	horizontal_spacing = 16
+}
+
+styles["notepad_scroll_pane"] = {
+	type = "scroll_pane_style",
+	vertical_align = "center",
+	horizontal_spacing = 16,
+	vertically_stretchable = "on"
+}
+
+styles["notepad_controls_textbox"] = {
+	type = "textbox_style",
+	horizontally_stretchable = "stretch_and_expand",
+	vertically_stretchable = "stretch_and_expand"
+}
+
+styles["notepad_deep_frame"] = {
+	type = "frame_style",
+	parent = "slot_button_deep_frame",
+	vertically_stretchable = "on",
+	horizontally_stretchable = "on",
+	top_margin = 16,
+	left_margin = 8,
+	right_margin = 8,
+	bottom_margin = 4
+}
