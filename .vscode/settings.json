@@ -1,16 +1,18 @@
 {
-  "cSpell.customDictionaries": {
-    "custom-dictionary-workspace": {
-      "name": "custom-dictionary-workspace",
-      "path": "${workspaceFolder:factorio-notes-mod}/.cspell/custom-dictionary-workspace.txt",
-      "addWords": true,
-      "scope": "workspace"
-    }
-  },
   "Lua.diagnostics.globals": [
-    "defines",
-    "script",
     "game",
-    "data"
-  ]
+    "script",
+    "data",
+    "remote",
+    "commands",
+    "settings",
+    "rcon",
+    "rendering",
+    "defines",
+    "global"
+  ],
+  "Lua.diagnostics.disable": [
+    "undefined-doc-name",
+    "undefined-field"
+  ],
 }
